@@ -55,6 +55,7 @@ function playGame() {
     for (let rounds = 0; rounds < 5; rounds++) {
         let result = playRound(getComputerChoice(), getHumanChoice()); 
         alert(result);
+        console.log(result)
         
     } 
     let winner;
@@ -62,9 +63,16 @@ function playGame() {
         winner = "Human";
     } else if (computerScore > humanScore) {
         winner = "Computer";
+    } else {
+        winner = "It was a tie!"
     }
-    
-    alert(`Human score: ${humanScore}\nComputer score ${computerScore}\nWinner is ${winner}`)
+    winnerMessage = `Human score: ${humanScore}\nComputer score ${computerScore}\nWinner is ${winner}`
 
+    return winnerMessage 
 
 }
+
+
+game = playGame();
+console.log(game)
+alert(game)
