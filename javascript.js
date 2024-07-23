@@ -57,33 +57,34 @@ function playRound(computerChoice, humanChoice) {
     return endMessage
 }   
 
-function playGame() { 
+// function playGame() { 
 
-    // Loop until 5 rounds are reached, output results
-    for (let rounds = 0; rounds < 5; rounds++) {
-        let result = playRound(getComputerChoice(), getHumanChoice()); 
-        alert(result);
-        console.log(result)
+//     // Logic that plays 5 rounds
+
+//     // for (let rounds = 0; rounds < 5; rounds++) {
+//     //     let result = playRound(getComputerChoice(), getHumanChoice()); 
+//     //     alert(result);
+//     //     console.log(result)
         
-    } 
+//     // } 
     
-    // Compare score, check for winner
-    let winner;
-    if (humanScore > computerScore) {
-        winner = "Human";
-    } else if (computerScore > humanScore) {
-        winner = "Computer";
-    } else {
-        winner = "It was a tie!"
-    }
+//     // Compare score, check for winner
+//     let winner;
+//     if (humanScore > computerScore) {
+//         winner = "Human";
+//     } else if (computerScore > humanScore) {
+//         winner = "Computer";
+//     } else {
+//         winner = "It was a tie!"
+//     }
 
-    winnerMessage = `Human score: ${humanScore}\nComputer score: ${computerScore}\nWinner is ${winner}`
+//     winnerMessage = `Human score: ${humanScore}\nComputer score: ${computerScore}\nWinner is ${winner}`
 
-    return winnerMessage 
+//     return winnerMessage 
 
-}
+// }
 
-// A win is 1 point. Tie is 0.5 each
-game = playGame();
-console.log(game)
-alert(game)
+// // A win is 1 point. Tie is 0.5 each
+// game = playGame();
+// console.log(game)
+// alert(game)
